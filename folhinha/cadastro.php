@@ -19,7 +19,7 @@ include_once("code/conexao.php");
     
     <div class="login-container">
         <div class="logo">
-            <h1>EcoMundo</h1>
+            <h1>Sustainfy</h1>
             <p>Crie sua conta e comece sua jornada ecológica</p>
         </div>
         

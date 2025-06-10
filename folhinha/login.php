@@ -8,7 +8,7 @@ include("code/conexao.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login.css">
-    <title>EcoMundo - Login</title>
+    <title>Sustainfy - Login</title>
 
 </head>
 <body>
@@ -23,7 +23,7 @@ include("code/conexao.php");
             <?php
             echo $nome;
             ?>
-            <h1>EcoMundo</h1>
+            <h1>Sustainfy</h1>
             <p>Conecte-se à sua conta e continue sua jornada ecológica</p>
         </div>
         

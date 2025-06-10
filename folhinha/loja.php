@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/loja.css">
-    <title>EcoHarmony - Estilo de Vida Sustentável</title>
+    <title>Sustainfy - Estilo de Vida Sustentável</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -220,7 +220,7 @@
     <footer>
         <div class="footer-grid">
             <div class="footer-column footer-about">
-                <h3>Sobre a EcoHarmony</h3>
+                <h3>Sobre a Sustainfy</h3>
                 <p>Nossa missão é oferecer produtos que unam design, qualidade e sustentabilidade, provando que é possível consumir com consciência sem abrir mão do estilo e conforto.</p>
                 <div class="social-links">
                     <a href="#"><i class="fab fa-instagram"></i></a>
@@ -255,16 +255,16 @@
             <div class="footer-column">
                 <h3>Contato</h3>
                 <ul class="footer-links">
-                    <li><a href="mailto:contato@ecoharmony.com">contato@ecoharmony.com</a></li>
-                    <li><a href="tel:+5511999999999">(11) 99999-9999</a></li>
-                    <li>Av. Sustentável, 123 - São Paulo/SP</li>
+                    <li><a href="mailto:contato@ecoharmony.com">Ecosite@gmail.com</a></li>
+                    <li><a href="tel:+5511999999999">(85) 99259-1642</a></li>
+                    <li>Av. Sustentável, 123 - São Gonçalo do Amarante</li>
                     <li>Segunda a Sexta, 9h às 18h</li>
                 </ul>
             </div>
         </div>
         
         <div class="footer-bottom">
-            <p>© 2023 EcoHarmony. Todos os direitos reservados. | CNPJ: 00.000.000/0001-00</p>
+            <p>© 2025 Sustainfy. Todos os direitos reservados. </p>
         </div>
     </footer>
 </body>
