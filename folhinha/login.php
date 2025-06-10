@@ -20,6 +20,9 @@ include("code/conexao.php");
     
     <div class="login-container">
         <div class="logo">
+            <?php
+            echo $nome;
+            ?>
             <h1>EcoMundo</h1>
             <p>Conecte-se à sua conta e continue sua jornada ecológica</p>
         </div>

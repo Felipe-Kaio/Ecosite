@@ -57,6 +57,18 @@ include_once("code/conexao.php");
                 Já tem uma conta? <a href="login.php">Faça login</a>
             </div>
         </form>
+
+        <?php
+if (isset($_SESSION['cadastro_erros'])) {
+    echo '<div class="erro-login" style="color: red; margin-top: 10px;">';
+    foreach ($_SESSION['cadastro_erros'] as $erro) {
+        echo "<p>$erro</p>";
+    }
+    echo '</div>';
+    unset($_SESSION['cadastro_erros']);
+}
+?>
+
     </div>
     
     <div class="leaf-decoration leaf-2">
