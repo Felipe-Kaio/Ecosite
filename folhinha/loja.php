@@ -23,7 +23,6 @@
         </a>
         
         <ul class="nav-links">
-            <li><a href="#">Início</a></li>
             <li><a href="#categories">Categorias</a></li>
             <li><a href="#products">Produtos</a></li>
             <li><a href="tlsbmais.php">Sobre</a></li>

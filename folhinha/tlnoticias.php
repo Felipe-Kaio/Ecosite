@@ -8,294 +8,8 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        /* Estilos específicos para a página do Blog */
-        .blog-hero {
-            background-image: url('https://images.unsplash.com/photo-1470240974861-f09c62923985?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
-            background-size: cover;
-            background-position: center;
-            color: #fff;
-            text-align: center;
-            padding: 80px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 400px;
-        }
-
-        .blog-hero h1 {
-            font-size: 3.5em;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
-
-        .blog-hero p {
-            font-size: 1.3em;
-            max-width: 800px;
-            margin: 0 auto;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-        }
-
-        .blog-content {
-            display: grid;
-            grid-template-columns: 2fr 1fr; /* Coluna principal do blog e sidebar */
-            gap: 40px;
-            max-width: 1200px;
-            margin: 60px auto;
-            padding: 0 20px;
-        }
-
-        .main-blog-posts {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 40px;
-        }
-
-        .blog-post-card {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-            overflow: hidden;
-            transition: transform 0.3s ease;
-        }
-
-        .blog-post-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .blog-post-card img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-        }
-
-        .blog-post-info {
-            padding: 30px;
-        }
-
-        .blog-post-info .post-meta {
-            font-size: 0.9em;
-            color: #777;
-            margin-bottom: 15px;
-        }
-
-        .blog-post-info .post-meta i {
-            margin-right: 5px;
-            color: #28a745;
-        }
-
-        .blog-post-info h3 {
-            font-size: 2em;
-            color: #333;
-            margin-bottom: 15px;
-            line-height: 1.3;
-        }
-
-        .blog-post-info p {
-            color: #555;
-            line-height: 1.7;
-            margin-bottom: 20px;
-        }
-
-        .read-more {
-            display: inline-block;
-            color: #28a745;
-            font-weight: 600;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .read-more:hover {
-            color: #1e7e34;
-        }
-
-        .sidebar {
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            padding: 30px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
-
-        .sidebar h4 {
-            font-size: 1.5em;
-            color: #333;
-            margin-bottom: 25px;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-        }
-
-        .sidebar ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .sidebar ul li {
-            margin-bottom: 15px;
-        }
-
-        .sidebar ul li a {
-            color: #555;
-            text-decoration: none;
-            transition: color 0.3s ease;
-            display: block;
-            padding: 5px 0;
-        }
-
-        .sidebar ul li a:hover {
-            color: #28a745;
-        }
-
-        .recent-post {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-
-        .recent-post img {
-            width: 70px;
-            height: 70px;
-            object-fit: cover;
-            border-radius: 4px;
-            margin-right: 15px;
-        }
-
-        .recent-post-info h5 {
-            font-size: 1.1em;
-            color: #333;
-            margin-bottom: 5px;
-        }
-
-        .recent-post-info span {
-            font-size: 0.85em;
-            color: #777;
-        }
-
-        .comments-section {
-            background-color: #f2fcf4;
-            padding: 60px 20px;
-            max-width: 1000px;
-            margin: 60px auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-        }
-
-        .comments-section h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            color: #28a745;
-            font-size: 2.5em;
-        }
-
-        .comment-form label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 600;
-            color: #333;
-        }
-
-        .comment-form input[type="text"],
-        .comment-form input[type="email"],
-        .comment-form textarea {
-            width: 100%;
-            padding: 12px;
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            font-family: 'Poppins', sans-serif;
-            font-size: 1em;
-            box-sizing: border-box; /* Garante que padding não adicione à largura total */
-        }
-
-        .comment-form textarea {
-            resize: vertical;
-            min-height: 120px;
-        }
-
-        .comment-form button {
-            background-color: #28a745;
-            color: #fff;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 6px;
-            font-size: 1.1em;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            display: block; /* Ocupa a largura total */
-            width: 100%;
-        }
-
-        .comment-form button:hover {
-            background-color: #1e7e34;
-        }
-
-        .comment-list {
-            margin-top: 50px;
-        }
-
-        .comment-item {
-            background-color: #fff;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-            margin-bottom: 25px;
-            position: relative; /* Para a linha de tempo */
-        }
-
-        .comment-author-meta {
-            display: flex;
-            align-items: center;
-            margin-bottom: 15px;
-        }
-
-        .comment-author-meta img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-right: 15px;
-            border: 2px solid #28a745;
-        }
-
-        .comment-author-meta .author-name {
-            font-weight: 700;
-            color: #333;
-            font-size: 1.1em;
-        }
-
-        .comment-author-meta .comment-date {
-            font-size: 0.85em;
-            color: #777;
-            margin-left: 10px;
-        }
-
-        .comment-content-text {
-            color: #555;
-            line-height: 1.7;
-        }
-
-        /* Responsividade */
-        @media (max-width: 992px) {
-            .blog-content {
-                grid-template-columns: 1fr; /* Uma coluna em telas menores */
-            }
-            .sidebar {
-                order: -1; /* Move sidebar para cima em telas menores */
-            }
-        }
-
-        @media (max-width: 768px) {
-            .blog-hero h1 {
-                font-size: 2.5em;
-            }
-            .blog-hero p {
-                font-size: 1em;
-            }
-            .blog-post-info h3 {
-                font-size: 1.5em;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/tlnoticias.css">
+   
 </head>
 <body>
     <div class="promo-banner">
@@ -303,13 +17,13 @@
     </div>
 
     <nav class="navbar">
-        <a class="logo" href="index.html">Sustainfy</a>
+        <a class="logo" href="loja.php">Sustainfy</a>
         <ul class="nav-links">
-            <li><a href="index.html">Início</a></li>
-            <li><a href="index.html#categories">Categorias</a></li>
-            <li><a href="index.html#products">Produtos</a></li>
-            <li><a href="saiba-mais.html">Sobre</a></li>
-            <li><a href="#">Blog</a></li> </ul>
+            <li><a href="loja.php">Início</a></li>
+            <li><a href="loja.php#categories">Categorias</a></li>
+            <li><a href="loja.php#products">Produtos</a></li>
+            <li><a href="tlsbmais.php">Sobre</a></li>
+        </ul>
         <div class="nav-icons">
             <a href="#"><i class="fas fa-shopping-bag"></i></a>
         </div>
@@ -479,18 +193,18 @@
             <div class="footer-column">
                 <h3>Ajuda</h3>
                 <ul class="footer-links">
-                    <li><a href="#">Central de Ajuda</a></li>
-                    <li><a href="#">Política de Entrega</a></li>
-                    <li><a href="#">Trocas e Devoluções</a></li>
-                    <li><a href="#">Pagamentos</a></li>
-                    <li><a href="#">Dúvidas Frequentes</a></li>
+                    <li>Central de Ajuda</li>
+                    <li>Política de Entrega</li>
+                    <li>Trocas e Devoluções</li>
+                    <li>Pagamentos</li>
+                    <li>Dúvidas Frequentes</li>
                 </ul>
             </div>
 
             <div class="footer-column">
                 <h3>Contato</h3>
                 <ul class="footer-links">
-                    <li><a href="mailto:contato@ecoharmony.com">Ecosite@gmail.com</a></li>
+                    <li><a href="mailto:contato@sustainfy.com">Sustainfy@gmail.com</a></li>
                     <li><a href="tel:+5511999999999">(85) 99259-1642</a></li>
                     <li>Av. Sustentável, 123 - São Gonçalo do Amarante</li>
                     <li>Segunda a Sexta, 9h às 18h</li>
