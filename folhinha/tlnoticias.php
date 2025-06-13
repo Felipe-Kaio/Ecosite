@@ -25,7 +25,7 @@
             <li><a href="tlsbmais.php">Sobre</a></li>
         </ul>
         <div class="nav-icons">
-            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+         
         </div>
     </nav>
 

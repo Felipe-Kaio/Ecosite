@@ -24,7 +24,7 @@
             <li><a href="tlnoticias.php">Blog</a></li> 
         </ul>
         <div class="nav-icons">
-            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+         
         </div>
     </nav>
 
