@@ -1,4 +1,8 @@
-
+<?php
+session_start();
+include_once('code/carrinho_functions.php');
+include_once('code/conexao.php');
+?>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -112,7 +116,7 @@
         
         <div class="products-grid">
             <!-- Produto 1 -->
-            <div class="product-card">
+            <div class="product-card" data-id="1">
                 <span class="product-badge">Novidade</span>
                 <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Conjunto Bambu" class="product-img">
                 <div class="product-info">
@@ -130,7 +134,7 @@
             </div>
             
             <!-- Produto 2 -->
-            <div class="product-card">
+            <div class="product-card" data-id="2">
                 <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Shampoo Sólido" class="product-img">
                 <div class="product-info">
                     <span class="product-category">Beleza Natural</span>
@@ -147,7 +151,7 @@
             </div>
             
             <!-- Produto 3 -->
-            <div class="product-card">
+            <div class="product-card" data-id="3">
                 <span class="product-badge">Mais Vendido</span>
                 <img src="https://images.unsplash.com/photo-1583744946564-b52d01e2da64?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Garrafa Térmica" class="product-img">
                 <div class="product-info">
@@ -165,7 +169,7 @@
             </div>
             
             <!-- Produto 4 -->
-            <div class="product-card">
+           <div class="product-card" data-id="4">
                 <img src="https://images.unsplash.com/photo-1586796445437-aea4f0473ad6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Mochila Ecológica" class="product-img">
                 <div class="product-info">
                     <span class="product-category">Moda Consciente</span>
@@ -182,7 +186,7 @@
             </div>
             
             <!-- Produto 5 -->
-            <div class="product-card">
+    <div class="product-card" data-id="5">
                 <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Escova Bambu" class="product-img">
                 <div class="product-info">
                     <span class="product-category">Cuidados Pessoais</span>
@@ -198,8 +202,7 @@
                 </div>
             </div>
             
-            <!-- Produto 6 -->
-            <div class="product-card">
+            <!-- Produto 6 --><div class="product-card" data-id="6">
                 <span class="product-badge">Eco-Friendly</span>
                 <img src="https://images.unsplash.com/photo-1550358864-518f202c02ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Canudos de Metal" class="product-img">
                 <div class="product-info">
@@ -269,5 +272,38 @@
             <p>© 2025 Sustainfy. Todos os direitos reservados. </p>
         </div>
     </footer>
+
+ 
+    <script>
+    // Adicionar ao carrinho - Versão melhorada
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const productCard = this.closest('.product-card');
+            const productId = productCard.dataset.id;
+            
+            fetch('adicionar_carrinho.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: `produto_id=${productId}&quantidade=1`
+            })
+            .then(response => {
+                if (response.ok) {
+                    const cartIcon = document.querySelector('.fa-shopping-bag');
+                    if (cartIcon) {
+                        cartIcon.classList.add('animate-bounce');
+                        setTimeout(() => cartIcon.classList.remove('animate-bounce'), 1000);
+                    }
+                    alert('Produto adicionado ao carrinho!');
+                } else {
+                    alert('Erro ao adicionar produto');
+                }
+            });
+        });
+    });
+    </script>
+
 </body>
 </html>
