@@ -84,7 +84,7 @@ include_once('code/conexao.php');
             </div>
             
             <div class="category-card">
-                <img src="https://images.unsplash.com/photo-1583744946564-b52d01e2da64?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Moda Consciente" class="category-img">
+                <img src="img/consciente.jpg        " alt="Moda Consciente" class="category-img">
                 <div class="category-overlay">
                     <h3 class="category-title">Moda Consciente</h3>
                     <a href="#" class="category-link">
@@ -118,7 +118,7 @@ include_once('code/conexao.php');
             <!-- Produto 1 -->
             <div class="product-card" data-id="1">
                 <span class="product-badge">Novidade</span>
-                <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Conjunto Bambu" class="product-img">
+                <img src="img/kitbambu.jpg" alt="Conjunto Bambu" class="product-img">
                 <div class="product-info">
                     <span class="product-category">Casa Sustentável</span>
                     <h3 class="product-title">Conjunto Utensílios Bambu</h3>
@@ -135,7 +135,7 @@ include_once('code/conexao.php');
             
             <!-- Produto 2 -->
             <div class="product-card" data-id="2">
-                <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Shampoo Sólido" class="product-img">
+                <img src="img/shampoo_eco.jpg" alt="Shampoo Sólido" class="product-img">
                 <div class="product-info">
                     <span class="product-category">Beleza Natural</span>
                     <h3 class="product-title">Shampoo Sólido Vegano</h3>
@@ -153,7 +153,7 @@ include_once('code/conexao.php');
             <!-- Produto 3 -->
             <div class="product-card" data-id="3">
                 <span class="product-badge">Mais Vendido</span>
-                <img src="https://images.unsplash.com/photo-1583744946564-b52d01e2da64?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Garrafa Térmica" class="product-img">
+                <img src="img/garrafaeco.jpg" alt="Garrafa Térmica" class="product-img">
                 <div class="product-info">
                     <span class="product-category">Acessórios</span>
                     <h3 class="product-title">Garrafa Térmica Aço Inox</h3>
@@ -170,7 +170,7 @@ include_once('code/conexao.php');
             
             <!-- Produto 4 -->
            <div class="product-card" data-id="4">
-                <img src="https://images.unsplash.com/photo-1586796445437-aea4f0473ad6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Mochila Ecológica" class="product-img">
+                <img src="img/bolsaeco.jpg" alt="Mochila Ecológica" class="product-img">
                 <div class="product-info">
                     <span class="product-category">Moda Consciente</span>
                     <h3 class="product-title">Mochila de Fibra Natural</h3>
@@ -187,7 +187,7 @@ include_once('code/conexao.php');
             
             <!-- Produto 5 -->
     <div class="product-card" data-id="5">
-                <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Escova Bambu" class="product-img">
+                <img src="img/kitescovaeco.jpg" alt="Escova Bambu" class="product-img">
                 <div class="product-info">
                     <span class="product-category">Cuidados Pessoais</span>
                     <h3 class="product-title">Kit Escovas de Bambu</h3>
@@ -204,7 +204,7 @@ include_once('code/conexao.php');
             
             <!-- Produto 6 --><div class="product-card" data-id="6">
                 <span class="product-badge">Eco-Friendly</span>
-                <img src="https://images.unsplash.com/photo-1550358864-518f202c02ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Canudos de Metal" class="product-img">
+                <img src="img/canudseco.jpg" alt="Canudos de Metal" class="product-img">
                 <div class="product-info">
                     <span class="product-category">Acessórios</span>
                     <h3 class="product-title">Kit Canudos Reutilizáveis</h3>

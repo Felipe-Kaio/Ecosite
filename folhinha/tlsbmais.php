@@ -30,12 +30,11 @@
 
     <section class="saiba-mais-hero">
         <div class="hero-content">
-            <h1>Saiba Mais Sobre a Sustainfy</h1>
-            <p>Descubra nossa jornada, nossos valores e o compromisso inabalável com um futuro mais verde para todos.</p>
+            <h1 style=" color: black;">Saiba Mais Sobre a Sustainfy</h1>
+            <p style=" color: #28a745;">Descubra nossa jornada, nossos valores e o compromisso inabalável com um futuro mais verde para todos.</p>
         </div>
     </section>
 
-    ---
 
     <section id="about" class="content-section">
         <div class="section-header">
@@ -49,12 +48,11 @@
                 <p>Comprometemo-nos a operar de forma transparente, desde a seleção de fornecedores até a entrega final, garantindo que cada item em nossa loja contribua positivamente para a redução do impacto ambiental e para a promoção de práticas de consumo responsáveis.</p>
             </div>
             <div class="mission-image">
-                <img src="https://images.unsplash.com/photo-1532924108851-911853d9154a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Planta em mãos">
+                <img src="img/plantamao.jpg" alt="Planta em mãos">
             </div>
         </div>
     </section>
 
-    ---
 
     <section class="content-section" style="background-color: #f2fcf4;">
         <div class="section-header">
@@ -85,7 +83,6 @@
         </div>
     </section>
 
-    ---
 
     <section class="content-section">
         <div class="section-header">
@@ -112,7 +109,6 @@
         </div>
     </section>
 
-    ---
 
     <section class="content-section" style="background-color: #f9f9f9;">
         <div class="section-header">
@@ -121,7 +117,7 @@
         </div>
         <div class="team-grid">
             <div class="team-member-card">
-                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734b35e?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Foto de Membro da Equipe">
+                <img src="img/mulher1.jpg" alt="Foto de Membro da Equipe">
                 <h4>Ana Silva</h4>
                 <p>Fundadora & CEO</p>
                 <p>Visionária por trás da Sustainfy, apaixonada por inovação e sustentabilidade.</p>
@@ -133,7 +129,7 @@
                 <p>Especialista em sourcing sustentável e qualidade de produtos.</p>
             </div>
             <div class="team-member-card">
-                <img src="https://images.unsplash.com/photo-1544717297-fa95b453e1a8?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Foto de Membro da Equipe">
+                <img src="img/mulher2.jpg" alt="Foto de Membro da Equipe">
                 <h4>Carla Mendes</h4>
                 <p>Líder de Marketing</p>
                 <p>Contadora de histórias ambientais e promotora de um estilo de vida consciente.</p>
